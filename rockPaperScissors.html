@@ -3,8 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        h1 {
+            background-color: rgb(75, 75, 227);
+            color: rgb(227, 227, 235);
+            padding: 20px;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2 {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .buttonSection {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        button {
+            font-size: 130px;
+            padding: 60px;
+            border-radius: 20px;
+            border: 0;
+        }
+        button:hover {
+            background-color: rgb(226, 226, 226);
+        }
+        #gameStatusText, #playerScoreText, #computerScoreText, 
+        #winnerText {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #gameStatusText {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        #playerScoreText, #computerScoreText,
+        #winnerText {
+            margin-top: 7px;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Rock, Paper, Scissors</h1>
+    <hr>
+    <h2>Please make your selection</h2>
+    <div class="buttonSection">
+        <button id="rockButton">🪨</button>
+        <button id="paperButton">📃</button>
+        <button id="scissorsButton">✂️</button>
+    </div>
+    <p id="gameStatusText">Round Status</p>
+    <p id="playerScoreText">Your score:</p>
+    <p id="computerScoreText">Computer Score:</p>
+    <p id="winnerText">And the winner is...</p>
     <script src="rockPaperScissors.js"></script>
 </body>
+
 </html>
